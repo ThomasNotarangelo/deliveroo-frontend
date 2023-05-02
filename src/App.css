@@ -1,0 +1,128 @@
+/* Style Global */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 45px 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+img {
+  height: 100px;
+}
+/* HEADER */
+
+header {
+  border-bottom: solid lightgrey 1px;
+}
+
+header img {
+  height: 60px;
+}
+
+/* HERO */
+
+.hero .container {
+  display: flex;
+  padding: 20px O;
+}
+
+.hero img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 28px;
+  color: grey;
+}
+
+/* MAIN */
+
+main {
+  background-color: #f3f5f5;
+}
+
+main .container {
+  padding: 20px 0;
+  display: flex;
+  /* gap = séparation entre col-left et col-right */
+  gap: 30px;
+}
+
+main .col-left {
+  background-color: red;
+  flex: 68;
+}
+
+main .col-right {
+  background-color: blue;
+  height: 20px;
+  width: 20px;
+  flex: 32;
+}
+
+main .meals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Modification du composant Meal */
+main article {
+  height: 160px;
+  width: 48%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  /* background-color: green; */
+}
+
+main img {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+main .meal-description {
+  font-size: 14px;
+  line-height: 20px;
+  height: 43px;
+
+  /* Cacher ce qui dépasse */
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+main .price-popular {
+  display: flex;
+}
+
+main .popular {
+  color: orange;
+  margin-left: 20px;
+}
