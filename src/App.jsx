@@ -4,7 +4,12 @@ import { useState, useEffect } from "react";
 
 // Components
 import Meal from "./components/Meal";
-import Deliveroo_logo from "./assets/images/Deliveroo_logo";
+import Deliveroo_logo from "./assets/images/Deliveroo_logo.png";
+
+// Icons
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+library.add(faStar);
 
 function App() {
   // State pour stocker la data

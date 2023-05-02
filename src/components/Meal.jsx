@@ -1,4 +1,5 @@
-import replaceDotByComa from "../utils/replaceDotByComa";
+import replaceDotByComa from "../utils/replaceDotByComa.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Meal = ({ meal }) => {
   return (
@@ -10,7 +11,12 @@ const Meal = ({ meal }) => {
         )}
         <div className="price-popular">
           <p>{replaceDotByComa(meal.price)} €</p>
-          {meal.popular && <p className="popular">Populaire</p>}
+          {meal.popular && (
+            <p className="popular">
+              <FontAwesomeIcon icon="star" />
+              Populaire
+            </p>
+          )}
         </div>
       </div>
       {meal.picture && <img src={meal.picture} alt={meal.title} />}
